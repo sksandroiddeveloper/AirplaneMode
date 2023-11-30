@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    tools:context=".CallActivity">
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:id="@+id/voicecall"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="25dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        android:text="Start A Call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonNam"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="#B5B5B5"
+        android:ems="10"
+        android:layout_marginBottom="25dp"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/voicecall"
+        app:layout_constraintEnd_toEndOf="@+id/voicecall"
+        app:layout_constraintStart_toStartOf="@+id/voicecall" />
+
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:id="@+id/videobutton"
+        android:layout_width="120dp"
+        android:gravity="center"
+        android:layout_height="25dp"
+        android:text="Video Call"
+        android:textColor="@color/white"
+        android:background="@color/purple_700"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/voicecall"
+        app:layout_constraintStart_toStartOf="@+id/voicecall"
+        app:layout_constraintTop_toBottomOf="@+id/voicecall" />
+</androidx.constraintlayout.widget.ConstraintLayout>
